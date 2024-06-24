@@ -32,3 +32,12 @@ jobs:
           context: .
           push: true
           tags: my-image:latest
+
+      - name: Check Docker Buildx output
+        run: echo "${{ steps.docker_build.outputs }}"
+
+      - name: List Docker images
+        run: docker images
+
+      - name: Debug GitHub context
+        run: echo "${{ toJson(github) }}"
