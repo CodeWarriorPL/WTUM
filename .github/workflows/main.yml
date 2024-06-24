@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: my-image:latest
+          tags: my-image
 
       - name: Check Docker Buildx output
         run: echo "${{ steps.docker_build.outputs }}"
