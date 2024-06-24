@@ -1,0 +1,4 @@
+dash==2.17.1
+numpy==1.24.3
+tensorflow==2.13.0
+Flask==2.3.2
